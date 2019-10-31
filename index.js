@@ -169,7 +169,7 @@
     }
 
     function coll_check(){
-      var coll = 0.05
+      var coll = 0.01
       // front
       for(var i=0; i<nameLoc.length; i++){
         if(distance(nameLoc[i],PLANE.FRONT) < coll){
@@ -268,7 +268,7 @@
       gl.uniformMatrix4fv(mmLoc, false, mm)
       gl.drawArrays(gl.TRIANGLES, 48, 36)
       
-      var indices = [ 0, 1, 2, 3 ]
+      var indices = [ 0, 1, 2, 3, 4, 5, 6, 7 ]
 
       nameLoc = []
       for (var i = 0; i < indices.length; i++) {
